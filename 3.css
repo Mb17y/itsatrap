@@ -1,0 +1,154 @@
+div {
+    position: absolute;
+}
+
+body {
+    height: 10000px;
+    width:10000px;
+    background: rgb(26, 26, 26);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.KW_raster { /* KalenderWochen (KW 1, KW 2, KW 3,...) */
+    background: hsla(180, 83%, 26%);
+    position: sticky;
+    z-index: 2;
+    top: 2px;
+}
+
+.KW_raster-free {   
+    background: rgb(26, 26, 26);
+}
+
+#raster {
+    background: rgb(53, 51, 51);
+    border-collapse: collapse;
+}
+
+#employee_name_ {
+    background: red;
+}
+
+.cell-employees {
+    height:20px;
+    position: sticky;
+    background: hsla(180, 83%, 26%);
+    left: 5px;
+    z-index: 1;
+}
+
+.textfeld {
+    padding: 10px;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(106, 126, 126);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#textfeld-inhalt {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.closeButton {
+    cursor:pointer;
+    outline:none;
+    font-size: 25px;
+    width: auto;
+    height: 50px;
+    position: fixed;
+    top: 84%;
+    left: 50%;
+    font-size: 15px;
+    transform: translate(20%, 10%);
+    border: 0px;
+    border-radius: 10px;
+}
+
+.closeButton:hover {
+    background: rgba(255, 0, 0);
+    transition: 0.4s;
+}
+
+.submitButton {
+    cursor: pointer;
+    outline:none;
+    font-size: 25px;
+    width: 100px;
+    height: 40px;
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    font-size:15px;
+    transform: translate(-120%, 10%);
+    border: 0px;
+}
+
+.submitButton:hover {
+    background:rgb(21, 212, 4);
+    transition: 0.4s;
+}
+
+.inputField_email {
+    outline:none;
+    font-size: 25px;
+    width: 500px;
+    height: 30px;
+    position: fixed;
+    top: 24%;
+    left: 50%;
+    font-size: 18px;
+    transform: translate(-50%, 0%);
+    border: 0px;
+}
+
+.inputField_message {
+    outline:none;
+    font-size: 25px;
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    font-size: 18px;
+    transform: translate(-50%, 0%);
+    border: 0px;
+}
+
+#button {
+    position:fixed;
+    transform: translateY(360px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cell:hover {
+    background-color: rgb(122, 121, 121);
+    transition: 0.3s;
+}
+
+.input_sended, .input_error {
+    width: auto;
+    padding-right:10px;
+    padding-left:10px;
+    height: 25px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 20px;
+    line-height:25px;
+}
+
+.input_sended {
+    background:rgb(76, 231, 55);
+}
+
+.input_error {
+    background:rgb(236, 21, 21);
+}
